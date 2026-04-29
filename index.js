@@ -103,10 +103,6 @@ $(() => {
       //give the username it's click handler function inside here
       $tweet.append($tweetStructure);
 
-      if ($('.tweet').length > 10) {
-        $('.tweet').last().remove();
-      }
-
       $tweetsDiv.prepend($tweet);
     });
     lastCount = streams.home.length;
