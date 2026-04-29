@@ -36,7 +36,7 @@ $(() => {
 
   //put this code into a function
   function addNewTweets(tweets) {
-    const $tweets = tweets.slice(0, 10).map((tweet) => {
+    const $tweets = tweets.map((tweet) => {
       const $tweet = $('<div class="tweet"></div>').css({ backgroundColor: '#D9EBF5', color: '#1A3040', border: '1px solid #8AACBE', padding: '10px', marginBottom: '5px' });
       //username needs to be in its own tag
       //swapping const text = `@${tweet.user}: ${tweet.message}`;
